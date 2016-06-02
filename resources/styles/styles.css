@@ -1,0 +1,135 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+@font-face {
+    font-family: swingHigh;
+    src: url(../../resources/swingHigh.ttf);
+}
+@font-face {
+    font-family: high_strung;
+    src: url(../../resources/high_strung.ttf);
+}
+@font-face {
+    font-family: toxico;
+    src: url(../../resources/Toxico.otf);
+}
+@font-face {
+    font-family: xperia;
+    src: url(../../resources/Xperia.ttf);
+}
+
+@font-face {
+    font-family: future;
+    src: url(../../resources/FUTRFW.TTF);
+}
+
+body {
+  margin: auto;
+  display: block;
+  text-align: center;
+  background: url(../../resources/images/dope.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.row {
+  margin-top: 0;
+}
+
+li {
+  list-style-type: none;
+}
+.content {
+  width: 100%;
+  margin-top: 10%;
+}
+.selects {
+  display: block;
+  margin: auto;
+
+}
+select {
+display: inline-block;
+}
+
+.create {
+  display: inline-block;
+  padding: 2%;
+  border: 2px solid black;
+}
+.cd {
+  float: left;
+  margin: 2px;
+  height: 250px;
+  width: 19%;
+  position: relative;
+  z-index: 1;
+  color:rgb(218, 199, 199);
+  /*box-shadow: 1px 1px 1px 1px;*/
+  /*background-color: rgba(218, 199, 199, 0.5);*/
+  text-shadow: 1px 1px 1px black;
+
+}
+.cds {
+  margin-top:2%;
+}
+
+span {
+  color:rgb(218, 199, 199);
+  font-family: high_strung;
+  font-size: 150px;
+
+}
+
+.ink {
+
+}
+
+.blot {
+
+}
+
+h1 {
+  text-align: center;
+  padding-right:2%;
+  font-family: future;
+  font-size: 100px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+h2 {
+  font-family: toxico;
+}
+
+h3, h2 {
+  font-family: high_strung;
+}
+
+input {
+  margin-top: 2px;
+}
